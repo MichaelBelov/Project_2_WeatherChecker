@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<body>
+    <h1>Results of checking</h1>
+    <h2>Start city: {{ result.start_city.name }}</h2>
+    <p>Weather: {{ result.start_city.bad_weather }}</p>
+    <p>Temperature: {{ result.start_city.weather.temperature }}(°C)</p>
+    <p>Wind speed: {{ result.start_city.weather.wind_speed }}(м/с)</p>
+    <p>Rain probability: {{ result.start_city.weather.precipitation }}(%)</p>
+    <p>Humidity: {{ result.start_city.weather.humidity }}(%)</p>
+
+    <h2>Finish city: {{ result.end_city.name }}</h2>
+    <p>Weather: {{ result.end_city.bad_weather }}</p>
+    <p>Temperature: {{ result.end_city.weather.temperature }}(°C)</p>
+    <p>Wind speed: {{ result.end_city.weather.wind_speed }}(м/с)</p>
+    <p>Rain probability: {{ result.end_city.weather.precipitation }}(%)</p>
+    <p>Humidity: {{ result.end_city.weather.humidity }}(%)</p>
+
+    <a href="/">Turn back</a>
+</body>
+</html>
